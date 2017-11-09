@@ -1,0 +1,74 @@
+[15-Oct-2016 14:11:21 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/satnetcom/public_html/inventory/chart.php/data.php on line 15
+[15-Oct-2016 14:11:36 UTC] PHP Parse error:  syntax error, unexpected '$id' (T_VARIABLE) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 9
+[15-Oct-2016 14:13:41 UTC] PHP Parse error:  syntax error, unexpected '$bulan1' (T_VARIABLE) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 4
+[15-Oct-2016 14:52:23 UTC] PHP Parse error:  syntax error, unexpected '(', expecting variable (T_VARIABLE) or '$' in /home/satnetcom/public_html/inventory/chart.php/index.php on line 10
+[15-Oct-2016 14:52:44 UTC] PHP Parse error:  syntax error, unexpected '(', expecting variable (T_VARIABLE) or '$' in /home/satnetcom/public_html/inventory/chart.php/index.php on line 10
+[15-Oct-2016 14:53:42 UTC] PHP Parse error:  syntax error, unexpected '(', expecting variable (T_VARIABLE) or '$' in /home/satnetcom/public_html/inventory/chart.php/index.php on line 10
+[15-Oct-2016 14:53:44 UTC] PHP Parse error:  syntax error, unexpected '(', expecting variable (T_VARIABLE) or '$' in /home/satnetcom/public_html/inventory/chart.php/index.php on line 10
+[15-Oct-2016 14:59:26 UTC] PHP Fatal error:  Call to undefined function full_url() in /home/satnetcom/public_html/inventory/chart.php/index.php on line 67
+[15-Oct-2016 16:44:59 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/satnetcom/public_html/inventory/chart.php/index.php on line 2
+[15-Oct-2016 17:05:37 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 133
+[15-Oct-2016 17:07:05 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 133
+[15-Oct-2016 17:33:18 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/satnetcom/public_html/inventory/chart.php/index.php on line 164
+[16-Oct-2016 11:14:46 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:14:46 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:14:52 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:14:52 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:14:52 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:14:52 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:14:53 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:14:53 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:14:55 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:14:55 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:15:30 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:15:30 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:15:31 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:15:31 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:15:31 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:15:31 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:15:32 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:15:32 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:15:33 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:15:33 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:15:33 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:15:33 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:15:33 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:15:33 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:15:37 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:15:37 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:15:39 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:15:39 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:15:50 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[16-Oct-2016 11:15:50 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/satnetcom/public_html/inventory/chart.php/data.php on line 13
+[28-Oct-2016 02:09:40 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 148
+[28-Oct-2016 02:09:40 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 171
+[28-Oct-2016 02:10:38 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 148
+[28-Oct-2016 02:10:38 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 171
+[28-Oct-2016 02:13:01 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 148
+[28-Oct-2016 02:13:01 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 171
+[28-Oct-2016 02:13:30 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 148
+[28-Oct-2016 02:13:30 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 171
+[05-Nov-2016 02:27:43 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 149
+[05-Nov-2016 02:27:43 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 173
+[05-Nov-2016 02:28:23 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 149
+[05-Nov-2016 02:28:23 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 173
+[05-Nov-2016 02:29:35 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 149
+[05-Nov-2016 02:29:35 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 173
+[05-Nov-2016 02:30:54 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 149
+[05-Nov-2016 02:30:54 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 173
+[05-Nov-2016 02:32:23 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 149
+[05-Nov-2016 02:32:23 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 173
+[05-Nov-2016 02:32:33 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 173
+[05-Nov-2016 02:32:51 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 173
+[05-Nov-2016 02:35:37 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 173
+[05-Nov-2016 02:36:01 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 173
+[05-Nov-2016 02:36:58 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 173
+[05-Nov-2016 02:37:32 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 173
+[05-Nov-2016 02:37:59 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 173
+[09-Nov-2016 02:34:58 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 153
+[09-Nov-2016 02:34:58 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 177
+[09-Nov-2016 02:35:58 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/satnetcom/public_html/inventory/chart.php/index.php on line 127
+[09-Nov-2016 02:36:32 UTC] PHP Parse error:  syntax error, unexpected 'print' (T_PRINT) in /home/satnetcom/public_html/inventory/chart.php/index.php on line 129
+[09-Nov-2016 02:36:35 UTC] PHP Parse error:  syntax error, unexpected 'print' (T_PRINT) in /home/satnetcom/public_html/inventory/chart.php/index.php on line 129
+[09-Nov-2016 02:36:43 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 156
+[09-Nov-2016 02:36:43 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/satnetcom/public_html/inventory/chart.php/index.php on line 180

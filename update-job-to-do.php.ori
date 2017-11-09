@@ -1,0 +1,31 @@
+<?php 
+include "koneksi.php";
+ 
+$id=$_POST['id']; 
+$swos=$_POST['swos'];
+$id_customer=$_POST['id_customer'];
+$id_engineer=$_POST['id_engineer'];
+$id_engineer2=$_POST['id_engineer2'];
+$id_engineer3=$_POST['id_engineer3'];
+$id_engineer4=$_POST['id_engineer4'];
+$id_terima_pekerjaan=$_POST['id_terima_pekerjaan'];  
+$datetime_open=$_POST['datetime_open'];
+$datetime_finish=$_POST['datetime_finish'];  
+$tipe_pekerjaan=$_POST['tipe_pekerjaan'];
+$priority_pekerjaan=$_POST['priority_pekerjaan'];
+$scope_pekerjaan=$_POST['scope_pekerjaan'];
+$id_detail_pekerjaan=$_POST['id_detail_pekerjaan'];
+$keterangan_pekerjaan=$_POST['keterangan_pekerjaan'];
+$status_charge=$_POST['status_charge'];
+$status_jobtodo=$_POST['status_jobtodo'];    
+
+$query=mysql_query("update job_to_do set swos='$swos', id_customer='$id_customer', id_engineer='$id_engineer', id_engineer2='$id_engineer2', id_engineer3='$id_engineer3', id_engineer4='$id_engineer4', id_terima_pekerjaan='$id_terima_pekerjaan', datetime_open='$datetime_open', datetime_finish='$datetime_finish', tipe_pekerjaan='$tipe_pekerjaan', priority_pekerjaan='$priority_pekerjaan', scope_pekerjaan='$scope_pekerjaan', id_detail_pekerjaan='$id_detail_pekerjaan',  keterangan_pekerjaan='$keterangan_pekerjaan', status_charge='$status_charge', status_jobtodo='$status_jobtodo', updated_at=NOW() where id_job_to_do='$id'"); 
+
+if($query){ 
+  echo "<font color='white'>Berhasil Simpan</font>";
+  echo "<meta http-equiv=\"refresh\" content=\"1;show-job-to-do.php\">";
+}else{
+  echo "Gagal input data"; 
+  echo mysql_error(); 
+} 
+?> 

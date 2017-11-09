@@ -1,0 +1,25 @@
+[14-Nov-2016 11:47:11 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/satnetcom/public_html/inventory/notif/process.php on line 18
+[14-Nov-2016 12:45:54 UTC] PHP Fatal error:  Call to undefined function file_get_content() in /home/satnetcom/public_html/inventory/notif/process.php on line 28
+[14-Nov-2016 12:56:32 UTC] PHP Parse error:  syntax error, unexpected 't' (T_STRING) in /home/satnetcom/public_html/inventory/notif/process.php on line 56
+[14-Nov-2016 12:56:50 UTC] PHP Parse error:  syntax error, unexpected '$header' (T_VARIABLE) in /home/satnetcom/public_html/inventory/notif/process.php on line 72
+[14-Nov-2016 13:08:29 UTC] PHP Parse error:  syntax error, unexpected '[' in /home/satnetcom/public_html/inventory/notif/process.php on line 73
+[14-Nov-2016 13:08:52 UTC] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/satnetcom/public_html/inventory/notif/process.php on line 79
+[14-Nov-2016 13:09:18 UTC] PHP Parse error:  syntax error, unexpected ''[SatNetCom] '' (T_CONSTANT_ENCAPSED_STRING) in /home/satnetcom/public_html/inventory/notif/process.php on line 73
+[14-Nov-2016 13:09:41 UTC] PHP Parse error:  syntax error, unexpected '[' in /home/satnetcom/public_html/inventory/notif/process.php on line 73
+[14-Nov-2016 13:09:52 UTC] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR) in /home/satnetcom/public_html/inventory/notif/process.php on line 73
+[14-Nov-2016 13:10:13 UTC] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/satnetcom/public_html/inventory/notif/process.php on line 79
+[14-Nov-2016 13:10:25 UTC] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/satnetcom/public_html/inventory/notif/process.php on line 79
+[14-Nov-2016 13:10:36 UTC] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/satnetcom/public_html/inventory/notif/process.php on line 79
+[14-Nov-2016 13:10:37 UTC] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/satnetcom/public_html/inventory/notif/process.php on line 79
+[14-Nov-2016 13:11:38 UTC] PHP Parse error:  syntax error, unexpected '[' in /home/satnetcom/public_html/inventory/notif/process.php on line 73
+[14-Nov-2016 13:11:47 UTC] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR) in /home/satnetcom/public_html/inventory/notif/process.php on line 73
+[14-Nov-2016 13:12:13 UTC] PHP Parse error:  syntax error, unexpected '(' in /home/satnetcom/public_html/inventory/notif/process.php on line 73
+[14-Nov-2016 13:12:30 UTC] PHP Parse error:  syntax error, unexpected ''['' (T_CONSTANT_ENCAPSED_STRING) in /home/satnetcom/public_html/inventory/notif/process.php on line 73
+[14-Nov-2016 13:12:42 UTC] PHP Parse error:  syntax error, unexpected ''\['' (T_CONSTANT_ENCAPSED_STRING) in /home/satnetcom/public_html/inventory/notif/process.php on line 73
+[14-Nov-2016 13:13:04 UTC] PHP Parse error:  syntax error, unexpected 'SatNetCom' (T_STRING) in /home/satnetcom/public_html/inventory/notif/process.php on line 73
+[14-Nov-2016 13:13:22 UTC] PHP Parse error:  syntax error, unexpected 'SatNetCom' (T_STRING) in /home/satnetcom/public_html/inventory/notif/process.php on line 73
+[14-Nov-2016 13:13:31 UTC] PHP Parse error:  syntax error, unexpected 'SatNetCom' (T_STRING) in /home/satnetcom/public_html/inventory/notif/process.php on line 73
+[14-Nov-2016 13:15:46 UTC] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/satnetcom/public_html/inventory/notif/process.php on line 79
+[14-Nov-2016 13:16:30 UTC] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/satnetcom/public_html/inventory/notif/process.php on line 80
+[14-Nov-2016 13:53:52 UTC] PHP Warning:  Unterminated comment starting line 2 in /home/satnetcom/public_html/inventory/notif/process.php on line 2
+[14-Nov-2016 13:58:31 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/satnetcom/public_html/inventory/notif/process.php on line 85

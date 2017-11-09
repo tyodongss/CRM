@@ -1,0 +1,107 @@
+<!--MULAI MENU-->
+<ul class="nav menu">
+	<li class="active"><a href="/"><span class="glyphicon glyphicon-dashboard"></span> Dashboard </a></li>
+	<li class="parent">
+                                <a href="#">
+                                        <span data-toggle="collapse" href="#sub-item-1" class="glyphicon glyphicon-th"></span> Master <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span>
+                                </a>
+                                <ul class="children collapse" id="sub-item-1">
+                                        <li>
+                                                <a class="" href="show-barang.php">
+                                                        <span class="glyphicon glyphicon-tasks"></span> Barang
+                                                </a>
+                                        </li>
+                                        <li>
+                                                <a class="" href="show-customer.php">
+                                                        <span class="glyphicon glyphicon glyphicon-tags"></span> Customer
+                                                </a>
+                                        </li>
+                                        <li>
+                                                <a class="" href="show-engineer.php">
+                                                        <span class="glyphicon glyphicon glyphicon-tags"></span> Engineer
+                                                </a>
+                                        </li>
+                                        <li>
+                                                <a class="" href="show-vendor.php">
+                                                        <span class="glyphicon glyphicon glyphicon-tags"></span> Vendor
+                                                </a>
+                                        </li>
+                                </ul>
+                        </li>
+
+                        <li class="parent ">
+                                <a href="#">
+                                        <span data-toggle="collapse" href="#sub-item-2" class="glyphicon glyphicon-transfer"></span> Transaksi <span data-toggle="collapse" href="#sub-item-2" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span>
+                                </a>
+                                <ul class="children collapse" id="sub-item-2">
+                                        <li>
+                                                <a class="" href="#">
+                                                        <span class="glyphicon glyphicon-arrow-right"></span> Masuk
+                                                </a>
+                                        </li>
+                                        <li>
+                                                <a class="" href="#">
+                                                        <span class="glyphicon glyphicon glyphicon-arrow-left"></span> Keluar
+                                                </a>
+                                        </li>
+                                </ul>
+                        </li>
+
+                        <li class="parent ">
+                                <a href="#">
+                                        <span data-toggle="collapse" href="#sub-item-3" class="glyphicon glyphicon-stats"></span> Laporan <span data-toggle="collapse" href="#sub-item-3" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span>
+                                </a>
+                                <ul class="children collapse" id="sub-item-3">
+                                        <li>
+                                                <a class="" href="#">
+                                                        <span class="glyphicon glyphicon-pencil"></span> History Transaksi
+                                                </a>
+                                        </li>
+                                        <li>
+                                                <a class="" href="#">
+                                                        <span class="glyphicon glyphicon glyphicon-list-alt"></span> Stok Barang
+                                                </a>
+                                        </li>
+                                </ul>
+                        </li>
+
+                        <li class="parent ">
+                                <a href="#">
+                                        <span data-toggle="collapse" href="#sub-item-4"  class="glyphicon glyphicon-list"> </span> Database <span data-toggle="collapse" href="#sub-item-4" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span>
+                                </a>
+                                <ul class="children collapse" id="sub-item-4">
+                                        <li>
+                                                <a class="" href="#">
+                                                        <span class="glyphicon glyphicon-cloud-download"></span> Backup
+                                                </a>
+                                        </li>
+                                        <li>
+                                                <a class="" href="#">
+                                                        <span class="glyphicon glyphicon-cloud-upload"></span> Restore
+                                                </a>
+                                        </li>
+                                </ul>
+                        </li>
+                        <li class="active"><a href="/"><span class="glyphicon glyphicon-dashboard"></span> CRM</a></li>
+                        <li class="parent ">
+                                <a href="#">
+                                        <span data-toggle="collapse" href="#sub-item-crm-1" class="glyphicon glyphicon-th"></span> Master <span data-toggle="collapse" href="#sub-item-crm-1" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span>
+                                </a>
+                                <ul class="children collapse" id="sub-item-crm-1">
+                                        <li>
+                                                <a class="" href="show-customer-complain.php">
+                                                        <span class="glyphicon glyphicon-tasks"></span> Customer Complain
+                                                </a>
+                                        </li>
+                                        <li>
+                                                <a class="" href="show-downtime.php">
+                                                        <span class="glyphicon glyphicon glyphicon-tags"></span> Downtime
+                                                </a>
+                                        </li>
+                                </ul>
+                        </li>
+
+                        <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                </ul>
+<div class="attribution"><a href="http://www.satnetcom.com">SNC-NOC Version 0.1b</a></div>
+</div><!--/.sidebar-->

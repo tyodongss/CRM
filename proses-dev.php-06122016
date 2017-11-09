@@ -1,0 +1,23 @@
+<?php
+session_start();
+#Logging
+include "proses-log.php";
+
+if ($_GET['menu']=="login"){
+	if ($_SESSION['role']=="noc"){
+		session_start();
+		$_SESSION['roleold'] = $_SESSION['role'];
+		$_SESSION['role'] = "devel";
+		header ("Location: dashboard.php?menu=devel");
+	} else {
+		print "not allowed";
+	}
+
+} else if ($_GET['menu']=="logout"){
+	session_start();
+	$_SESSION['role'] = $_SESSION['roleold'];
+	header ("Location: dashboard.php");
+} else {
+	header ("Location: index.php");
+}
+?>

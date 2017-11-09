@@ -1,0 +1,394 @@
+<?php
+date_default_timezone_set('Asia/Makassar');
+session_start();
+?>
+<!--  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sistem Informasi SNC</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/datepicker3.css" rel="stylesheet">
+<link href="/css/bootstrap-table.css" rel="stylesheet">
+<link href="/css/styles.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/bootstrap-datetimepicker-standalone.min.css">
+<link rel="stylesheet" href="/css/bootstrap-datetimepicker.min.css">
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container-fluid">
+                        <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-signal"></span> SNC-NOC<span></span></a>
+<!-- USER MENU -->
+<?php include "menu-user.php" ?>
+
+                        </div>
+
+                </div><!-- /.container-fluid -->
+        </nav>
+
+        
+    <!--    
+    ==================================================== MENU
+    -->
+    <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+        <!--
+        <form role="search">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+        </form>
+        -->
+
+        <?php include "menu.php"; ?>
+
+        <!--    
+    ==================================================== MENU
+    -->
+        
+    <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">           
+        <div class="row">
+            <ol class="breadcrumb">
+                <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li class="active">Job To Do</li>
+            </ol>
+        </div><!--/.row-->
+        
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Ubah Job To Do</h1>
+            </div>
+        </div><!--/.row-->
+<?php 
+include "koneksi.php"; 
+
+$id=$_GET['id']; 
+
+$query=mysql_query("SELECT job_to_do.id_job_to_do, job_to_do.swos, job_to_do.id_customer, job_to_do.id_engineer, job_to_do.id_engineer2, job_to_do.id_engineer3, job_to_do.id_engineer4, job_to_do.id_terima_pekerjaan, terima_pekerjaan.nama_terima_pekerjaan, job_to_do.datetime_open, job_to_do.datetime_finish, job_to_do.tipe_pekerjaan, job_to_do.priority_pekerjaan, job_to_do.scope_pekerjaan, job_to_do.id_detail_pekerjaan, job_to_do.keterangan_pekerjaan, job_to_do.status_charge, job_to_do.status_jobtodo, job_to_do.created_at, job_to_do.updated_at, job_to_do.deleted_at, customer.nama, engineer.nama_engineer, detail_pekerjaan.nama_detail_pekerjaan
+FROM job_to_do, customer, engineer, detail_pekerjaan, terima_pekerjaan
+WHERE customer.id_customer = job_to_do.id_customer
+AND engineer.id_engineer = job_to_do.id_engineer
+AND detail_pekerjaan.id_detail_pekerjaan = job_to_do.id_detail_pekerjaan
+AND terima_pekerjaan.id_terima_pekerjaan = job_to_do.id_terima_pekerjaan
+AND id_job_to_do =  '$id'");
+?> 
+<?php 
+while($row=mysql_fetch_array($query)){ 
+?>      
+        
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="col-md-6">
+                            <form role="form" action="update-job-to-do.php" method="post">
+                            <input type="hidden" name="_token" value="L8C5ujpOh4UEsaNko2Y3pkuzP714OtRymsXPqrNJ">
+                            <input type="hidden" name="id" value="<?php echo $id;?>"/>
+
+                                <div class="form-group">
+                                    <label>SWOS</label>
+                                    <input class="form-control" name="swos" value="<?php echo $row['swos']?>" maxlength="7" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Nama Customer</label>
+                                    <select class="form-control" name="id_customer">
+                                    <option>---- Pilih Customer ----</option>
+                                    <option selected value="<?php echo $row['id_customer'];?>"><?php echo $row['nama'];?></option>
+                                    <?php
+                                    include "koneksi.php";
+                                    $sql = mysql_query("SELECT * FROM customer order by nama asc");
+                                    if(mysql_num_rows($sql) != 0){
+                                    while($data = mysql_fetch_assoc($sql)){
+                                    echo '<option value="'.$data['id_customer'].'" >'.$data['nama'].'</option>';
+                                        } 
+                                    }
+                                    ?>
+                                </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>Nama Engineer 1</label>
+                                    <select class="form-control" name="id_engineer">
+                                    <option>---- Pilih Engineer ----</option>
+                                    <option selected value="<?php echo $row['id_engineer'];?>"><?php echo $row['nama_engineer'];?></option>
+                                    <?php
+                                    include "koneksi.php";
+                                    $sql = mysql_query("SELECT * FROM engineer order by nama_engineer asc");
+                                    if(mysql_num_rows($sql) != 0){
+                                    while($data = mysql_fetch_assoc($sql)){
+                                    echo '<option value="'.$data['id_engineer'].'" >'.$data['nama_engineer'].'</option>';
+                                        }
+                                    }
+                                    ?>
+                                </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Nama Engineer 2</label>
+                                    <select class="form-control" name="id_engineer2">
+                                    <option>---- Pilih Engineer ----</option>
+                                    <?
+                                    $sql2 = mysql_query("SELECT job_to_do.id_engineer2, (select engineer.nama_engineer from engineer where id_engineer = job_to_do.id_engineer2) as nama_engineer2 FROM job_to_do, engineer where engineer.id_engineer = job_to_do.id_engineer AND id_job_to_do =  '$id'");
+                                    if(mysql_num_rows($sql2) != 0){
+                                    while($data2 = mysql_fetch_assoc($sql2)){
+                                    echo '<option selected value="'.$data2['id_engineer2'].'" >'.$data2['nama_engineer2'].'</option>';
+                                        }
+                                    }
+                                    ?>
+                                    
+                                    <?php
+                                    include "koneksi.php";
+                                    $sql = mysql_query("SELECT * FROM engineer order by nama_engineer asc");
+                                    if(mysql_num_rows($sql) != 0){
+                                    while($data = mysql_fetch_assoc($sql)){
+                                    echo '<option value="'.$data['id_engineer'].'" >'.$data['nama_engineer'].'</option>';
+                                        }
+                                    }
+                                    ?>
+                                </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Nama Engineer 3</label>
+                                    <select class="form-control" name="id_engineer3">
+                                    <option>---- Pilih Engineer ----</option>
+                                    <?
+                                    $sql3 = mysql_query("SELECT job_to_do.id_engineer3, (select engineer.nama_engineer from engineer where id_engineer = job_to_do.id_engineer3) as nama_engineer3 FROM job_to_do, engineer where engineer.id_engineer = job_to_do.id_engineer AND id_job_to_do =  '$id'");
+                                    if(mysql_num_rows($sql3) != 0){
+                                    while($data3 = mysql_fetch_assoc($sql3)){
+                                    echo '<option selected value="'.$data3['id_engineer3'].'" >'.$data3['nama_engineer3'].'</option>';
+                                        }
+                                    }
+                                    ?>
+                                    <?php
+                                    include "koneksi.php";
+                                    $sql = mysql_query("SELECT * FROM engineer order by nama_engineer asc");
+                                    if(mysql_num_rows($sql) != 0){
+                                    while($data = mysql_fetch_assoc($sql)){
+                                    echo '<option value="'.$data['id_engineer'].'" >'.$data['nama_engineer'].'</option>';
+                                        }
+                                    }
+                                    ?>
+                                </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Nama Engineer 4</label>
+                                    <select class="form-control" name="id_engineer4">
+                                    <option>---- Pilih Engineer ----</option>
+                                    <?
+                                    $sql4 = mysql_query("SELECT job_to_do.id_engineer4, (select engineer.nama_engineer from engineer where id_engineer = job_to_do.id_engineer4) as nama_engineer4 FROM job_to_do, engineer where engineer.id_engineer = job_to_do.id_engineer AND id_job_to_do =  '$id'");
+                                    if(mysql_num_rows($sql4) != 0){
+                                    while($data4 = mysql_fetch_assoc($sql4)){
+                                    echo '<option selected value="'.$data4['id_engineer4'].'" >'.$data4['nama_engineer4'].'</option>';
+                                        }
+                                    }
+                                    ?>
+                                    <?php
+                                    include "koneksi.php";
+                                    $sql = mysql_query("SELECT * FROM engineer order by nama_engineer asc");
+                                    if(mysql_num_rows($sql) != 0){
+                                    while($data = mysql_fetch_assoc($sql)){
+                                    echo '<option value="'.$data['id_engineer'].'" >'.$data['nama_engineer'].'</option>';
+                                        }
+                                    }
+                                    ?>
+                                </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Terima Pekerjaan Dari</label>
+                                    <select class="form-control" name="id_terima_pekerjaan" required>
+                                    <option>---- Pilih Terima Pekerjaan ----</option>
+                                    <option selected value="<?php echo $row['id_terima_pekerjaan'];?>"><?php echo $row['nama_terima_pekerjaan'];?></option>
+                                    <?php
+                                    include "koneksi.php";
+                                    $sql = mysql_query("SELECT * FROM terima_pekerjaan order by nama_terima_pekerjaan asc");
+                                    if(mysql_num_rows($sql) != 0){
+                                    while($data = mysql_fetch_assoc($sql)){
+                                    echo '<option value="'.$data['id_terima_pekerjaan'].'">'.$data['nama_terima_pekerjaan'].'</option>';
+                                        }
+                                    }
+                                    ?>
+                                </select>
+                                </div>
+
+                                <div class="form-group">
+                                  <label>Date Time Open</label> 
+                                     <div class='input-group date' id='datetimepicker1'>
+                                        <input type='text' class="form-control" name="datetime_open"value="<?php echo $row['datetime_open'];?>" />
+                                        <span class="input-group-addon">
+                                          <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                      </div>
+                                </div>
+                
+                                <div class="form-group">
+                                  <label>Date Time Finish</label>
+                                  <div class='input-group date' id='datetimepicker2'>
+                                    <input type='text' class="form-control" name="datetime_finish" value="<?php echo $row['datetime_finish'];?>"/>
+                                    <span class="input-group-addon">
+                                      <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                  </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Tipe Pekerjaan</label>
+                                    <select class = "form-control" name="tipe_pekerjaan">
+                                    <option selected value="<?php echo $row['tipe_pekerjaan'];?>"><?php echo $row['tipe_pekerjaan'];?></option>
+                                    <option>Troubleshooting</option>
+                                    <option>Troubleshooting Link Down</option>
+                                    <option>Troubleshooting Link Intermittent</option>
+                                    <option>Install</option>
+                                    <option>Maintenance</option>
+                                    <option>Backup/Restore</option>
+                                    <option>Other</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>Priority Pekerjaan</label>
+                                    <select class = "form-control" name="priority_pekerjaan">
+                                    <option selected value="<?php echo $row['priority_pekerjaan'];?>"><?php echo $row['priority_pekerjaan'];?></option>
+                                    <option>Low</option>
+                                    <option>Normal</option>
+                                    <option>High</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Scope Pekerjaan</label>
+                                    <select class = "form-control" name="scope_pekerjaan">
+                                    <option selected value="<?php echo $row['scope_pekerjaan'];?>"><?php echo $row['scope_pekerjaan'];?></option>
+                                    <option>Work Station</option>
+                                    <option>Server</option>
+                                    <option>Network</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Detail Pekerjaan</label>
+                                    <select class="form-control" name="id_detail_pekerjaan">
+                                    <option>---- Pilih Detail Pekerjaan ----</option>
+                                    <option selected value="<?php echo $row['id_detail_pekerjaan'];?>"><?php echo $row['nama_detail_pekerjaan'];?></option>
+                                    <?php
+                                    include "koneksi.php";
+                                    $sql = mysql_query("SELECT * FROM detail_pekerjaan order by nama_detail_pekerjaan asc");
+                                    if(mysql_num_rows($sql) != 0){
+                                    while($data = mysql_fetch_assoc($sql)){
+                                    echo '<option value="'.$data['id_detail_pekerjaan'].'" >'.$data['nama_detail_pekerjaan'].'</option>';
+                                        }
+                                    }
+                                    ?>
+                                </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Keterangan Pekerjaan</label><br>
+                                <textarea name="keterangan_pekerjaan" cols=68 rows=5><?php echo $row['keterangan_pekerjaan']?> </textarea> <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="form-group">
+                                  <label>Status Charge</label>
+                                  <select class = "form-control" name="status_charge" required>
+                                  <option selected value="<?php echo $row['status_charge'];?>"><?php echo $row['status_charge'];?></option>
+                                  <option>---- Pilih Status ----</option>
+                                  <option>Charge</option>
+                                  <option>Free</option>
+                                  </select>
+                                </div>
+
+                                <div class="form-group">
+                                  <label>Status Job to DO</label>
+                                  <select class = "form-control" name="status_jobtodo" required>
+                                  <option selected value="<?php echo $row['status_jobtodo'];?>"><?php echo $row['status_jobtodo'];?></option>
+                                  <option>---- Pilih Status Job to DO ----</option>
+                                  <option>Open</option>
+                                  <option>Close</option>
+                                  </select>
+                                </div>
+                                                                
+                                <button type="submit" class="btn btn-primary">Update</button>
+                                <a href="../show-it-outsource.php" class="btn btn-default">Back</a>
+                                
+<?php
+}
+?>  
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div><!-- /.col-->
+        </div><!-- /.row -->
+        
+    </div><!--/.main-->
+
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/chart.min.js"></script>
+    <script src="/js/chart-data.js"></script>
+    <script src="/js/easypiechart.js"></script>
+    <script src="/js/easypiechart-data.js"></script>
+    <script src="/js/bootstrap-datepicker.js"></script>
+    <script src="/js/bootstrap-table.js"></script>
+        <script src="/js/moment.js"></script>
+        <script type="text/javascript" src="/js/bootstrap-datetimepicker.min.js"></script>
+    <script>
+        !function ($) {
+            $(document).on("click","ul.nav li.parent > a > span.icon", function(){        
+                $(this).find('em:first').toggleClass("glyphicon-minus");      
+            }); 
+            $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+        }(window.jQuery);
+
+        $(window).on('resize', function () {
+          if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+        })
+        $(window).on('resize', function () {
+          if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+        })
+    </script>
+    <script type="text/javascript">
+      $(function () {
+        $('#datetimepicker1').datetimepicker({
+          format: 'YYYY-MM-DD HH:mm:ss'
+        });
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(function () {
+        $('#datetimepicker2').datetimepicker({
+                        format: 'YYYY-MM-DD HH:mm:ss'
+                });
+      });
+    </script>   
+</body>
+
+</html>
+
+
+ 
